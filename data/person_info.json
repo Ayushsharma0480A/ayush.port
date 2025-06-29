@@ -1,0 +1,62 @@
+{
+  "name": "Ayush Sharma",
+  "profession": "Data Science Student | Machine Learning Engineer",
+  "description": "Detail-oriented Data Scientist and ML Engineer skilled in Python, SQL, and data engineering. Experienced in building predictive models, performing advanced analytics, and deploying scalable machine learning solutions. Strong foundation in EDA, model evaluation, and feature engineering. Enthusiastic about solving real-world problems using ethical, efficient, and explainable AI.",
+
+  "contact": {
+    "phone": "+91 86301 19254",
+    "email": "ayushsharma0480@gmail.com",
+    "location": "Agra, Uttar Pradesh"
+  },
+
+  "profiles": {
+    "linkedin": "https://linkedin.com/in/ayushsharma037452208",
+    "portfolio": "https://ayushsharma0480a.github.io/portfolio",
+    "github": "https://github.com/Ayushsharma0480A",
+    "twitter": "https://x.com/coder_ayush"
+  },
+
+  "skills": [
+    { "name": "Python", "icon": "https://img.icons8.com/color/48/000000/python.png" },
+    { "name": "TensorFlow", "icon": "https://img.icons8.com/color/48/000000/tensorflow.png" },
+    { "name": "PyTorch", "icon": "https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg" },
+    { "name": "Scikit-learn", "icon": "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" },
+    { "name": "SQL", "icon": "https://img.icons8.com/ios-filled/48/00A8E8/sql.png" },
+    { "name": "MongoDB", "icon": "https://img.icons8.com/color/48/000000/mongodb.png" },
+    { "name": "Flask", "icon": "https://img.icons8.com/ios-filled/50/000000/flask.png"},
+    { "name": "XGBoost", "icon": "https://img.icons8.com/ios-filled/50/000000/rocket.png"},
+    { "name": "HTML5", "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png" },
+    { "name": "JavaScript", "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png" }
+  ],
+
+  "education": [
+    {
+      "year": "2022 - 2026",
+      "title": "B.Tech in Computer Science, Hindustan College of Science and Technology",
+      "desc": "Pursuing a Bachelor's degree with a focus on algorithms, data structures, databases, and machine learning. CGPA: 7.8 - 8.0"
+    },
+    {
+      "year": "2022 - 2026",
+      "title": "Honors In Cybersecurity, HCST",
+      "desc": "Specialized in ethical hacking, cryptography, and secure software engineering."
+    }
+  ],
+
+  "experience": [
+    {
+      "year": "June 2025 - July 2025",
+      "title": "Summer Intern - India Space Lab",
+      "desc": "Engaged in technical training on space and data technologies. Participated in project-based learning under the India Space Lab Program Director."
+    },
+    {
+      "year": "April 2025 - June 2025",
+      "title": "Virtual Intern - Google AI/ML (Cohort 12)",
+      "desc": "Completed a 10-week internship focused on supervised learning pipelines. Earned TensorFlow and Object Detection badges."
+    },
+    {
+      "year": "November 2024",
+      "title": "Full Stack Developer Trainee - RPCL, HCST",
+      "desc": "Trained in frontend and backend development along with deployment workflows."
+    }
+  ]
+}

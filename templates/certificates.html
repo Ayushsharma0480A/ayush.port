@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Certificates & Badges{% endblock %}
+
+{% block content %}
+<div class="container mt-5" style="background-color: #F0F4F8; color: #2F3E46;">
+  <h2 class="text-center mb-4" style="color: #00A8E8;">Badges</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    {% for cert in certificates if cert.type == 'badge' %}
+    <div class="col">
+      <div class="card h-100 shadow-sm" style="background-color: #FFFFFF; color: #2F3E46; border: none;">
+        <img src="{{ cert.badge_url }}" class="card-img-top p-3" alt="Badge Image" style="height: 200px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title" style="color: #00A8E8;">{{ cert.title }}</h5>
+          <p class="card-text" style="color: #007F5F;">{{ cert.issuer }}</p>
+        </div>
+        <div class="card-footer text-end" style="background-color: #F0F4F8; color: #6c757d;">
+          {{ cert.date }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <h2 class="text-center my-5" style="color: #00A8E8;">Certificates</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    {% for cert in certificates if cert.type == 'certificate' %}
+    <div class="col">
+      <div class="card h-100 shadow-sm" style="background-color: #FFFFFF; color: #2F3E46; border: none;">
+        <img src="{{ cert.badge_url }}" class="card-img-top p-3" alt="Certificate Image" style="height: 200px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title" style="color: #00A8E8;">{{ cert.title }}</h5>
+          <p class="card-text" style="color: #007F5F;">{{ cert.issuer }}</p>
+        </div>
+        <div class="card-footer text-end" style="background-color: #F0F4F8; color: #6c757d;">
+          {{ cert.date }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

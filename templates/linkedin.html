@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}LinkedIn Notifications{% endblock %}
+
+{% block content %}
+<h2 class="text-center mb-4" style="color: #007F5F;">LinkedIn Notifications</h2>
+
+<div class="row row-cols-1 row-cols-md-2 g-4" style="background-color: #F0F4F8; padding: 20px; border-radius: 8px;">
+  {% for post in posts %}
+    <div class="col">
+      <div class="card h-100 shadow-sm" style="background-color: #FFFFFF; color: #2F3E46; border: none;">
+        <div class="card-body">
+          <h5 class="card-title" style="color: #007F5F;">{{ post.title }}</h5>
+          <p class="card-text">{{ post.content }}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between align-items-center" style="background-color: #F0F4F8;">
+          <small class="text-muted">{{ post.date }}</small>
+          <a href="{{ post.post_url }}" class="btn btn-sm" style="background-color: #00A8E8; color: white;" target="_blank">View Post</a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container mt-5" style="background-color: #ffffff; color: #2F3E46;">
+    
+    <!-- Personal Information -->
+    <div class="text-center mb-5">
+        <img src="static/images/profile_image2.jpg" alt="{{ person.name }}" class="rounded-circle mb-3" width="150">
+       
+        <h1 style="color: #2F3E46;">{{ person.name }}</h1>
+        <p style="color: #007F5F;">{{ person.profession }}</p>
+        <p>{{ person.description }}</p>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="mt-5">
+        <h2 class="text-center mb-4" style="color: #00A8E8;">Skills</h2>
+        <div class="row">
+            {% for skill in person.skills %}
+            <div class="col-md-3 col-sm-6 mb-4 text-center">
+                <div class="card shadow-sm" style="background-color: #FFFFFF; color: #2F3E46; border: none;">
+                    <div class="card-body">
+                        <img src="{{ skill.icon }}" alt="{{ skill.name }}" class="img-fluid mb-2" style="height: 50px;">
+                        <h6 class="card-title" style="color: #00A8E8;">{{ skill.name }}</h6>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Education and Experience Section -->
+    <div class="row mt-5">
+        <!-- Education -->
+        <div class="col-md-6">
+            <h3 class="text-center mb-4" style="color: #00A8E8;">Education</h3>
+            <div class="timeline">
+                {% for edu in person.education %}
+                <div class="card mb-3 shadow-sm" style="background-color: #FFFFFF; border: none; color: #2F3E46;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #007F5F;">{{ edu.year }}</h5>
+                        <h6 class="card-subtitle mb-2" style="color: #007F5F;">{{ edu.title }}</h6>
+                        <p class="card-text">{{ edu.desc }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="col-md-6">
+            <h3 class="text-center mb-4" style="color: #00A8E8;">Experience</h3>
+            <div class="timeline">
+                {% for exp in person.experience %}
+                <div class="card mb-3 shadow-sm" style="background-color: #FFFFFF; border: none; color: #2F3E46;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #007F5F;">{{ exp.year }}</h5>
+                        <h6 class="card-subtitle mb-2" style="color: #007F5F;">{{ exp.title }}</h6>
+                        <p class="card-text">{{ exp.desc }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

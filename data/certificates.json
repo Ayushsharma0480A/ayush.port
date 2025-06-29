@@ -1,0 +1,39 @@
+[
+  {
+    "title": "TensorFlow Badge",
+    "issuer": "Google Developers",
+    "date": "May 2025",
+    "badge_url": "https://img.icons8.com/color/240/tensorflow.png",
+    "type": "badge"
+  },
+  {
+    "title": "Object Detection (Beginner)",
+    "issuer": "Google Developers",
+    "date": "May 2025",
+    "badge_url": "https://developers.google.com/static/profile/badges/playlists/ml/get-started-object-detection/badge.svg",
+    "type": "badge"
+  },
+  {
+    "title": "Image Classification (Advanced)",
+    "issuer": "Google Developers",
+    "date": "May 2025",
+    "badge_url": "https://developers.google.com/static/profile/badges/playlists/ml/going-further-image-classification/badge.svg",
+    "type": "badge"
+  },
+  {
+    "title": "AI for Everyone",
+    "issuer": "Coursera (Andrew Ng)",
+    "date": "April 2025",
+    "badge_url": "https://img.icons8.com/color/240/artificial-intelligence.png",
+    "type": "certificate"
+  },
+  {
+    "title": " Generative AI certification!",
+    "issuer": "Google Cloud",
+    "date": "March 2025",
+    "badge_url": "https://img.icons8.com/color/240/google-cloud.png",
+    "type": "certificate"
+  }
+]
+
+
